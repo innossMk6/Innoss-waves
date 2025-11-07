@@ -1,0 +1,3 @@
+import React from 'react';
+const MARKETS=[{id:'R_10',label:'Volatility 10'},{id:'R_25',label:'Volatility 25'},{id:'R_50',label:'Volatility 50'},{id:'R_75',label:'Volatility 75'},{id:'R_100',label:'Volatility 100'},{id:'FRXEURUSD',label:'Forex EUR/USD'}];
+export default function MarketSelector({value,onChange}){return(<select value={value} onChange={e=>onChange(e.target.value)} className='w-full mt-1 p-2 border rounded'>{MARKETS.map(m=><option key={m.id} value={m.id}>{m.label} ({m.id})</option>)}</select>);}
