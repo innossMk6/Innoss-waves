@@ -3,10 +3,13 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-  "dev": "vite",
-  "build": "vite build",
-  "preview": "vite preview",
-  "postinstall": "patch-package"
+    "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "postinstall": "patch-package"
+}
+
 },
 
   },
@@ -14,6 +17,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "lightweight-charts": "^4.1.0"
+    "patch-package": "^8.0.0",
+    "postinstall-postinstall": "^2.1.0"
   },
   "devDependencies": {
     "vite": "^5.0.0",
